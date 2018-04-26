@@ -1,0 +1,8 @@
+#!/usr/bin/env Rscript
+f <- file("stdin")
+
+df <- read.csv(file=f, header=FALSE, sep=",")
+
+str(df)
+
+for ( c in df ) plot( c, type="l" )
